@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-6.3 -28.5 332.1 741.4">
+  <!-- 珍奇可爱标志：三颗蓝钻石，透明背景 -->
+  <defs>
+    <!-- 单颗钻石：菱形 + 中轴线 + 四条分面线 + 中心椭圆，宽 132 高 316 -->
+    <g id="rr-diamond">
+      <path fill="#76CAF5" stroke="#0590CC" stroke-width="7" stroke-linejoin="miter"
+            d="M 0 -158 L 66 0 L 0 158 L -66 0 Z"/>
+      <path fill="none" stroke="#0590CC" stroke-width="7"
+            d="M 0 -154 L 0 154 M 0 0 L -33 -79 M 0 0 L 33 -79 M 0 0 L -33 79 M 0 0 L 33 79"/>
+      <ellipse fill="#76CAF5" stroke="#0590CC" stroke-width="7" rx="21" ry="40"/>
+    </g>
+  </defs>
+
+  <!-- 参考系 320x682：上中 / 右中 / 左下三颗，边缘各内收避免裁切 -->
+  <use href="#rr-diamond" transform="translate(134,166)"/>
+  <use href="#rr-diamond" transform="translate(244,396)"/>
+  <use href="#rr-diamond" transform="translate(76,519)"/>
+</svg>

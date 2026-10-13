@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="20.7 2.9 1116.2 1095.7">
+  <!-- 苹果嘉儿可爱标志：三只红苹果，透明背景 -->
+  <defs>
+    <!-- 苹果主体：顶部 V 形凹陷，底部双瓣微凸，宽 480 高 400 -->
+    <path id="aj-body" fill="#E83840" d="M 0 42
+      C -18 10 -50 -12 -92 -4
+      C -168 -14 -228 44 -238 138
+      C -247 235 -198 322 -108 356
+      C -58 374 -18 370 0 348
+      C 18 370 58 374 108 356
+      C 198 322 247 235 238 138
+      C 228 44 168 -14 92 -4
+      C 50 -12 18 10 0 42 Z"/>
+    <!-- 细长叶：近直立微左挑，基部扎在凹口里 -->
+    <path id="aj-leaf-sliver" fill="#58B848" d="M -6 26
+      C -38 -8 -54 -72 -44 -134
+      C -12 -100 8 -40 10 22 Z"/>
+    <!-- 饱满叶：向右上伸展 -->
+    <path id="aj-leaf-fat" fill="#58B848" d="M -2 28
+      C 6 -36 44 -90 104 -106
+      C 116 -52 80 -2 22 24 Z"/>
+  </defs>
+
+  <!-- 上方苹果 -->
+  <g transform="translate(516,168) scale(0.93)">
+    <use href="#aj-body"/>
+    <use href="#aj-leaf-sliver"/>
+    <use href="#aj-leaf-fat"/>
+  </g>
+  <!-- 左下苹果（微左倾，叶镜像） -->
+  <g transform="translate(268,705) rotate(-8) scale(0.95)">
+    <use href="#aj-body"/>
+    <use href="#aj-leaf-fat" transform="scale(-1,1)"/>
+    <use href="#aj-leaf-sliver" transform="scale(-1,1)"/>
+  </g>
+  <!-- 右下苹果（微右倾） -->
+  <g transform="translate(890,600) rotate(8) scale(0.95)">
+    <use href="#aj-body"/>
+    <use href="#aj-leaf-sliver"/>
+    <use href="#aj-leaf-fat"/>
+  </g>
+</svg>

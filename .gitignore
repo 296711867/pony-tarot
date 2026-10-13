@@ -1,0 +1,24 @@
+# ===== 密钥与运行时数据（绝不入库）=====
+.env
+.env.local
+.env.*.local
+.runtime/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+
+# ===== 依赖与构建产物（可重新生成）=====
+node_modules/
+.next/
+out/
+deploy-package/
+*.zip
+*.log
+
+# ===== 开源参考快照（仅本地查阅，来源见 pony-tarot/THIRD_PARTY_LICENSES.txt）=====
+tarot-main/
+TarotWhisper-main/
+tarot-next-app-main/
+
+# ===== 卡面原图（78张PNG，网页使用 pony-tarot/public/cards 下的 WebP，已压缩）=====
+卡牌版本1/

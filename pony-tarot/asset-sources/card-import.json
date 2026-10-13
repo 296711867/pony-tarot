@@ -1,0 +1,704 @@
+[
+  {
+    "id": "major-00",
+    "name": "愚者",
+    "source": "2张大阿尔卡那\\00 愚者｜碧琪.png",
+    "originalBytes": 1909257,
+    "webpBytes": 98182,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "major-01",
+    "name": "魔术师",
+    "source": "2张大阿尔卡那\\01 魔术师｜紫悦.png",
+    "originalBytes": 2251674,
+    "webpBytes": 137548,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "major-02",
+    "name": "女祭司",
+    "source": "2张大阿尔卡那\\02 女祭司｜紫悦.png",
+    "originalBytes": 2033446,
+    "webpBytes": 125436,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "major-03",
+    "name": "女皇",
+    "source": "2张大阿尔卡那\\03 皇后｜柔柔.png",
+    "originalBytes": 2164191,
+    "webpBytes": 139776,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "major-04",
+    "name": "皇帝",
+    "source": "2张大阿尔卡那\\04 皇帝｜苹果嘉儿.png",
+    "originalBytes": 2615134,
+    "webpBytes": 235648,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "major-05",
+    "name": "教皇",
+    "source": "2张大阿尔卡那\\05 教皇｜紫悦.png",
+    "originalBytes": 2568804,
+    "webpBytes": 210980,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "major-06",
+    "name": "恋人",
+    "source": "2张大阿尔卡那\\06 恋人｜珍奇与苹果嘉儿.png",
+    "originalBytes": 2844196,
+    "webpBytes": 246128,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "major-07",
+    "name": "战车",
+    "source": "2张大阿尔卡那\\07 战车｜云宝.png",
+    "originalBytes": 2603336,
+    "webpBytes": 209250,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "major-08",
+    "name": "力量",
+    "source": "2张大阿尔卡那\\08 力量｜柔柔.png",
+    "originalBytes": 2586108,
+    "webpBytes": 204090,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "major-09",
+    "name": "隐士",
+    "source": "2张大阿尔卡那\\09 隐者｜紫悦.png",
+    "originalBytes": 2750169,
+    "webpBytes": 216232,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "major-10",
+    "name": "命运之轮",
+    "source": "2张大阿尔卡那\\10 命运之轮｜M6元素.png",
+    "originalBytes": 2835581,
+    "webpBytes": 240718,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "major-11",
+    "name": "正义",
+    "source": "2张大阿尔卡那\\11 正义｜苹果嘉儿.png",
+    "originalBytes": 2600958,
+    "webpBytes": 209680,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "major-12",
+    "name": "倒吊人",
+    "source": "2张大阿尔卡那\\12 倒吊人｜碧琪.png",
+    "originalBytes": 2606475,
+    "webpBytes": 202482,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "major-13",
+    "name": "死神",
+    "source": "2张大阿尔卡那\\13 死神｜神秘小马.png",
+    "originalBytes": 2918835,
+    "webpBytes": 260036,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "major-14",
+    "name": "节制",
+    "source": "2张大阿尔卡那\\14 节制｜柔柔.png",
+    "originalBytes": 2753560,
+    "webpBytes": 229304,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "major-15",
+    "name": "恶魔",
+    "source": "2张大阿尔卡那\\15 恶魔｜魔法幻象.png",
+    "originalBytes": 2830178,
+    "webpBytes": 241402,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "major-16",
+    "name": "高塔",
+    "source": "2张大阿尔卡那\\16 高塔｜水晶魔法塔.png",
+    "originalBytes": 2676819,
+    "webpBytes": 231522,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "major-17",
+    "name": "星星",
+    "source": "2张大阿尔卡那\\17 星星｜珍奇.png",
+    "originalBytes": 2727814,
+    "webpBytes": 227936,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "major-18",
+    "name": "月亮",
+    "source": "2张大阿尔卡那\\18 月亮｜柔柔.png",
+    "originalBytes": 2821501,
+    "webpBytes": 234572,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "major-19",
+    "name": "太阳",
+    "source": "2张大阿尔卡那\\19 太阳｜碧琪.png",
+    "originalBytes": 2574057,
+    "webpBytes": 210116,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "major-20",
+    "name": "审判",
+    "source": "2张大阿尔卡那\\20 审判｜M6.png",
+    "originalBytes": 2753789,
+    "webpBytes": 227716,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "major-21",
+    "name": "世界",
+    "source": "2张大阿尔卡那\\21 世界｜M6.png",
+    "originalBytes": 3052596,
+    "webpBytes": 270512,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "wands-01",
+    "name": "权杖王牌",
+    "source": "6张小阿尔卡那\\权杖组（14张）\\01权杖王牌.png",
+    "originalBytes": 2653696,
+    "webpBytes": 218808,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "wands-02",
+    "name": "权杖2",
+    "source": "6张小阿尔卡那\\权杖组（14张）\\02权杖二｜云宝.png",
+    "originalBytes": 2490071,
+    "webpBytes": 200070,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "wands-03",
+    "name": "权杖3",
+    "source": "6张小阿尔卡那\\权杖组（14张）\\03权杖三｜云宝.png",
+    "originalBytes": 2568474,
+    "webpBytes": 205782,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "wands-04",
+    "name": "权杖4",
+    "source": "6张小阿尔卡那\\权杖组（14张）\\04权杖四｜碧琪与苹果嘉儿.png",
+    "originalBytes": 2526206,
+    "webpBytes": 201652,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "wands-05",
+    "name": "权杖5",
+    "source": "6张小阿尔卡那\\权杖组（14张）\\05权杖五.png",
+    "originalBytes": 2742369,
+    "webpBytes": 238814,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "wands-06",
+    "name": "权杖6",
+    "source": "6张小阿尔卡那\\权杖组（14张）\\06权杖六｜云宝.png",
+    "originalBytes": 2633773,
+    "webpBytes": 215302,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "wands-07",
+    "name": "权杖7",
+    "source": "6张小阿尔卡那\\权杖组（14张）\\07权杖七｜云宝.png",
+    "originalBytes": 2674675,
+    "webpBytes": 208974,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "wands-08",
+    "name": "权杖8",
+    "source": "6张小阿尔卡那\\权杖组（14张）\\08权杖八.png",
+    "originalBytes": 2808046,
+    "webpBytes": 244730,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "wands-09",
+    "name": "权杖9",
+    "source": "6张小阿尔卡那\\权杖组（14张）\\09权杖九｜苹果嘉儿.png",
+    "originalBytes": 2479951,
+    "webpBytes": 192794,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "wands-10",
+    "name": "权杖10",
+    "source": "6张小阿尔卡那\\权杖组（14张）\\10权杖十｜苹果嘉儿.png",
+    "originalBytes": 2720698,
+    "webpBytes": 226338,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "wands-11",
+    "name": "权杖侍从",
+    "source": "6张小阿尔卡那\\权杖组（14张）\\11权杖侍从.png",
+    "originalBytes": 2677241,
+    "webpBytes": 221434,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "wands-12",
+    "name": "权杖骑士",
+    "source": "6张小阿尔卡那\\权杖组（14张）\\12权杖骑士｜云宝.png",
+    "originalBytes": 2843060,
+    "webpBytes": 250140,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "wands-13",
+    "name": "权杖王后",
+    "source": "6张小阿尔卡那\\权杖组（14张）\\13权杖皇后｜碧琪.png",
+    "originalBytes": 2642938,
+    "webpBytes": 200380,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "wands-14",
+    "name": "权杖国王",
+    "source": "6张小阿尔卡那\\权杖组（14张）\\14权杖国王｜苹果嘉儿.png",
+    "originalBytes": 2614302,
+    "webpBytes": 208674,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "cups-01",
+    "name": "圣杯王牌",
+    "source": "6张小阿尔卡那\\圣杯组（14张）\\01圣杯王牌.png",
+    "originalBytes": 1860157,
+    "webpBytes": 85210,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "cups-02",
+    "name": "圣杯2",
+    "source": "6张小阿尔卡那\\圣杯组（14张）\\02圣杯二｜柔柔与珍奇.png",
+    "originalBytes": 1880035,
+    "webpBytes": 111440,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "cups-03",
+    "name": "圣杯3",
+    "source": "6张小阿尔卡那\\圣杯组（14张）\\03圣杯三｜碧琪、柔柔、珍奇.png",
+    "originalBytes": 1996131,
+    "webpBytes": 122076,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "cups-04",
+    "name": "圣杯4",
+    "source": "6张小阿尔卡那\\圣杯组（14张）\\04圣杯四｜柔柔.png",
+    "originalBytes": 1897977,
+    "webpBytes": 92980,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "cups-05",
+    "name": "圣杯5",
+    "source": "6张小阿尔卡那\\圣杯组（14张）\\05圣杯五｜珍奇.png",
+    "originalBytes": 1905185,
+    "webpBytes": 100580,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "cups-06",
+    "name": "圣杯6",
+    "source": "6张小阿尔卡那\\圣杯组（14张）\\06圣杯六.png",
+    "originalBytes": 2036474,
+    "webpBytes": 123556,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "cups-07",
+    "name": "圣杯7",
+    "source": "6张小阿尔卡那\\圣杯组（14张）\\07圣杯七｜紫悦.png",
+    "originalBytes": 2104685,
+    "webpBytes": 133234,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "cups-08",
+    "name": "圣杯8",
+    "source": "6张小阿尔卡那\\圣杯组（14张）\\08圣杯八｜柔柔.png",
+    "originalBytes": 2089379,
+    "webpBytes": 118952,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "cups-09",
+    "name": "圣杯9",
+    "source": "6张小阿尔卡那\\圣杯组（14张）\\09圣杯九｜碧琪.png",
+    "originalBytes": 1823040,
+    "webpBytes": 98340,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "cups-10",
+    "name": "圣杯10",
+    "source": "6张小阿尔卡那\\圣杯组（14张）\\10圣杯十｜M6.png",
+    "originalBytes": 2061141,
+    "webpBytes": 148302,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "cups-11",
+    "name": "圣杯侍从",
+    "source": "6张小阿尔卡那\\圣杯组（14张）\\11圣杯侍从｜柔柔.png",
+    "originalBytes": 1824380,
+    "webpBytes": 89970,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "cups-12",
+    "name": "圣杯骑士",
+    "source": "6张小阿尔卡那\\圣杯组（14张）\\12圣杯骑士｜珍奇.png",
+    "originalBytes": 1842046,
+    "webpBytes": 89082,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "cups-13",
+    "name": "圣杯王后",
+    "source": "6张小阿尔卡那\\圣杯组（14张）\\13圣杯皇后｜柔柔.png",
+    "originalBytes": 2021795,
+    "webpBytes": 118058,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "cups-14",
+    "name": "圣杯国王",
+    "source": "6张小阿尔卡那\\圣杯组（14张）\\14圣杯国王｜珍奇.png",
+    "originalBytes": 2178820,
+    "webpBytes": 135160,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "swords-01",
+    "name": "宝剑王牌",
+    "source": "6张小阿尔卡那\\宝剑组（14张）\\01宝剑王牌.png",
+    "originalBytes": 1734969,
+    "webpBytes": 84790,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "swords-02",
+    "name": "宝剑2",
+    "source": "6张小阿尔卡那\\宝剑组（14张）\\02宝剑二｜紫悦.png",
+    "originalBytes": 2170527,
+    "webpBytes": 130940,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "swords-03",
+    "name": "宝剑3",
+    "source": "6张小阿尔卡那\\宝剑组（14张）\\03宝剑三.png",
+    "originalBytes": 2321771,
+    "webpBytes": 163214,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "swords-04",
+    "name": "宝剑4",
+    "source": "6张小阿尔卡那\\宝剑组（14张）\\04宝剑四｜紫悦.png",
+    "originalBytes": 2629799,
+    "webpBytes": 218972,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "swords-05",
+    "name": "宝剑5",
+    "source": "6张小阿尔卡那\\宝剑组（14张）\\05宝剑五.png",
+    "originalBytes": 2502007,
+    "webpBytes": 194140,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "swords-06",
+    "name": "宝剑6",
+    "source": "6张小阿尔卡那\\宝剑组（14张）\\06宝剑六｜柔柔.png",
+    "originalBytes": 2467316,
+    "webpBytes": 187862,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "swords-07",
+    "name": "宝剑7",
+    "source": "6张小阿尔卡那\\宝剑组（14张）\\07宝剑七.png",
+    "originalBytes": 2391450,
+    "webpBytes": 179234,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "swords-08",
+    "name": "宝剑8",
+    "source": "6张小阿尔卡那\\宝剑组（14张）\\08宝剑八｜珍奇.png",
+    "originalBytes": 2619751,
+    "webpBytes": 204656,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "swords-09",
+    "name": "宝剑9",
+    "source": "6张小阿尔卡那\\宝剑组（14张）\\09宝剑九｜紫悦.png",
+    "originalBytes": 2790562,
+    "webpBytes": 234574,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "swords-10",
+    "name": "宝剑10",
+    "source": "6张小阿尔卡那\\宝剑组（14张）\\10宝剑十.png",
+    "originalBytes": 2641620,
+    "webpBytes": 216792,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "swords-11",
+    "name": "宝剑侍从",
+    "source": "6张小阿尔卡那\\宝剑组（14张）\\11宝剑侍从｜紫悦.png",
+    "originalBytes": 2608520,
+    "webpBytes": 196768,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "swords-12",
+    "name": "宝剑骑士",
+    "source": "6张小阿尔卡那\\宝剑组（14张）\\12宝剑骑士｜云宝.png",
+    "originalBytes": 2516505,
+    "webpBytes": 183178,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "swords-13",
+    "name": "宝剑王后",
+    "source": "6张小阿尔卡那\\宝剑组（14张）\\13宝剑皇后｜珍奇.png",
+    "originalBytes": 2543107,
+    "webpBytes": 198144,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "swords-14",
+    "name": "宝剑国王",
+    "source": "6张小阿尔卡那\\宝剑组（14张）\\14宝剑国王｜紫悦.png",
+    "originalBytes": 2482295,
+    "webpBytes": 192664,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "pentacles-01",
+    "name": "星币王牌",
+    "source": "6张小阿尔卡那\\星币组（14张）\\01星币王牌.png",
+    "originalBytes": 2687648,
+    "webpBytes": 224346,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "pentacles-02",
+    "name": "星币2",
+    "source": "6张小阿尔卡那\\星币组（14张）\\02星币二｜碧琪.png",
+    "originalBytes": 2680147,
+    "webpBytes": 221674,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "pentacles-03",
+    "name": "星币3",
+    "source": "6张小阿尔卡那\\星币组（14张）\\03星币三｜珍奇、苹果嘉儿、紫悦.png",
+    "originalBytes": 2900202,
+    "webpBytes": 257044,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "pentacles-04",
+    "name": "星币4",
+    "source": "6张小阿尔卡那\\星币组（14张）\\04星币四.png",
+    "originalBytes": 2510215,
+    "webpBytes": 199542,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "pentacles-05",
+    "name": "星币5",
+    "source": "6张小阿尔卡那\\星币组（14张）\\05星币五.png",
+    "originalBytes": 2563920,
+    "webpBytes": 195900,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "pentacles-06",
+    "name": "星币6",
+    "source": "6张小阿尔卡那\\星币组（14张）\\06星币六｜苹果嘉儿.png",
+    "originalBytes": 2574547,
+    "webpBytes": 200920,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "pentacles-07",
+    "name": "星币7",
+    "source": "6张小阿尔卡那\\星币组（14张）\\07星币七｜苹果嘉儿.png",
+    "originalBytes": 2642506,
+    "webpBytes": 216830,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "pentacles-08",
+    "name": "星币8",
+    "source": "6张小阿尔卡那\\星币组（14张）\\08星币八｜珍奇.png",
+    "originalBytes": 2763995,
+    "webpBytes": 227664,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "pentacles-09",
+    "name": "星币9",
+    "source": "6张小阿尔卡那\\星币组（14张）\\09星币九｜珍奇.png",
+    "originalBytes": 2854210,
+    "webpBytes": 256654,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "pentacles-10",
+    "name": "星币10",
+    "source": "6张小阿尔卡那\\星币组（14张）\\10星币十｜苹果嘉儿.png",
+    "originalBytes": 2764349,
+    "webpBytes": 238834,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "pentacles-11",
+    "name": "星币侍从",
+    "source": "6张小阿尔卡那\\星币组（14张）\\11星币侍从.png",
+    "originalBytes": 2424143,
+    "webpBytes": 185980,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "pentacles-12",
+    "name": "星币骑士",
+    "source": "6张小阿尔卡那\\星币组（14张）\\12星币骑士｜苹果嘉儿.png",
+    "originalBytes": 2577819,
+    "webpBytes": 206842,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "pentacles-13",
+    "name": "星币王后",
+    "source": "6张小阿尔卡那\\星币组（14张）\\13星币皇后｜柔柔.png",
+    "originalBytes": 2778823,
+    "webpBytes": 241186,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "pentacles-14",
+    "name": "星币国王",
+    "source": "6张小阿尔卡那\\星币组（14张）\\14星币国王｜苹果嘉儿.png",
+    "originalBytes": 2659410,
+    "webpBytes": 225540,
+    "width": 768,
+    "height": 1152
+  }
+]

@@ -1,0 +1,44 @@
+小马利亚魔法塔罗（pony-tarot）素材来源与许可声明
+==================================================
+
+本站为非官方粉丝作品，与 Hasbro 及小马宝莉（My Little Pony）官方无任何隶属或授权关系；"小马宝莉"及相关角色名称版权归其权利方所有。站内塔罗内容供娱乐与自我整理参考，不构成预测或建议。
+
+一、代码
+
+本站部分代码与思路参考自开源项目 TarotWhisper（MIT License，Copyright (c) 2026 卢明 (J-York)），保留其原始许可声明如下：
+
+MIT License
+
+Copyright (c) 2026 卢明 (J-York)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+二、卡面与家园插画（本项目作者自制）
+
+`public/cards/` 下的 78 张塔罗卡面（"卡牌版本1"，原始文件见项目根目录 `卡牌版本1/`，网页使用压缩后的 WebP）以及 `public/art/` 下的家园场景与角色形象，均为本站作者自行绘制与生成，不属于 Rider-Waite-Smith 牌面，也不来自任何第三方图库或扫描存档。
+
+上述图片版权归本站作者所有。访客通过本站在线浏览、抽牌与保存个人记录无需任何授权；未经作者书面许可，请勿将图片复制、转载或用于其他用途。
+
+三、字体
+
+标题使用的思源宋体（Noto Serif SC）子集（`public/fonts/serif-sc-0.woff2`）依据 SIL Open Font License 1.1 授权使用，完整许可文本见 `public/fonts/OFL.txt`。该字体由其作者按 OFL 发布，本站仅做子集化与本地托管，不单独主张其版权。
+
+四、参考项目
+
+开发过程中交互思路参考了三个开源项目（tarot-main、TarotWhisper-main、tarot-next-app-main）。除上述 MIT 声明外，未复制其美术素材、卡面图片或其他资产；其代码快照保留在项目根目录仅作开发参考，不随本站发布。

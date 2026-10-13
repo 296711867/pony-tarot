@@ -1,0 +1,108 @@
+import assert from 'node:assert/strict';
+import { spawn } from 'node:child_process';
+import { mkdtemp, rm } from 'node:fs/promises';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
+import { randomBytes, createHash } from 'node:crypto';
+import { DatabaseSync } from 'node:sqlite';
+import { readSSE } from '../lib/sse.ts';
+import { sameOrigin } from '../lib/model-http.ts';
+import { dailyDraw, dateKey } from '../lib/engine.ts';
+import { personas, readerVoices } from '../data/personas.ts';
+
+const directory = await mkdtemp(join(tmpdir(), 'pony-ai-check-'));
+const databasePath = join(directory, 'test.sqlite');
+const port = 3097;
+const base = `http://127.0.0.1:${port}`;
+const fakeKey = 'fixture-only-not-a-real-api-key';
+const server = spawn(process.execPath, ['--import', './scripts/mock-model.mjs', 'node_modules/next/dist/bin/next', 'start', '--hostname', '127.0.0.1', '--port', String(port)], { cwd: process.cwd(), env: { ...process.env, MODEL_ENCRYPTION_KEY: randomBytes(32).toString('hex'), MODEL_DB_PATH: databasePath, APP_ORIGIN: base }, stdio: ['ignore', 'pipe', 'pipe'] });
+let serverLog = '';
+server.stdout.on('data', value => { serverLog += value; });
+server.stderr.on('data', value => { serverLog += value; });
+const api = (path, method = 'GET', body, cookie = '') => fetch(base + path, { method, headers: { Origin: base, 'Content-Type': 'application/json', ...(cookie ? { Cookie: cookie } : {}) }, ...(body ? { body: JSON.stringify(body) } : {}) });
+const payload = { deckId: 'pony-v1', readerId: 'twilight', question: '我可以怎样开始一个新的计划？', draws: [{ id: 'major-00', reversed: false }, { id: 'major-01', reversed: true }, { id: 'major-02', reversed: false }] };
+const events = async response => { const result = []; for await (const event of readSSE(response.body)) result.push({ event: event.event, data: JSON.parse(event.data) }); return result; };
+try {
+  const priorOrigin = process.env.APP_ORIGIN;
+  delete process.env.APP_ORIGIN;
+  const localRequest = { url: 'http://localhost:3000/api/model-config/', headers: new Headers({ host: '127.0.0.1:3000', origin: 'http://127.0.0.1:3000' }) };
+  assert.equal(sameOrigin(localRequest), true);
+  localRequest.headers.set('origin', 'https://wrong.example'); assert.equal(sameOrigin(localRequest), false);
+  localRequest.headers.set('origin', 'null'); assert.equal(sameOrigin(localRequest), false);
+  process.env.APP_ORIGIN = 'https://pony.example/';
+  localRequest.headers.set('origin', 'https://pony.example'); assert.equal(sameOrigin(localRequest), true);
+  if (priorOrigin === undefined) delete process.env.APP_ORIGIN; else process.env.APP_ORIGIN = priorOrigin;
+  const sample = new TextEncoder().encode(': comment\n\nevent: delta\ndata: {"text":\ndata: "你好"}\n\n');
+  const fragmented = new ReadableStream({ start(controller) { for (const byte of sample) controller.enqueue(Uint8Array.of(byte)); controller.close(); } });
+  const parsed = []; for await (const event of readSSE(fragmented)) parsed.push(event);
+  assert.equal(parsed.length, 1); assert.equal(parsed[0].event, 'delta'); assert.equal(JSON.parse(parsed[0].data).text, '你好');
+  for (let i = 0; i < 100; i++) {
+    if (server.exitCode !== null) throw new Error('Test server exited: ' + serverLog);
+    try { if ((await api('/api/model-config/')).ok) break; } catch {}
+    await new Promise(resolve => setTimeout(resolve, 100));
+  }
+  const noConfig = await (await api('/api/model-config/')).json();
+  assert.equal(noConfig.configured, false);
+  assert.equal((await api('/api/interpret/', 'POST', payload)).status, 401);
+  const forged = await fetch(base + '/api/model-config/', { method: 'POST', headers: { Origin: 'https://wrong.example', 'Content-Type': 'application/json' }, body: '{}' });
+  assert.equal(forged.status, 403);
+  const save = await api('/api/model-config/', 'POST', { model: 'glm-5.2', enabled: true, apiKey: fakeKey });
+  assert.equal(save.status, 200);
+  const cookie = save.headers.get('set-cookie').split(';')[0];
+  assert.match(save.headers.get('set-cookie'), /HttpOnly/i);
+  const config = await (await api('/api/model-config/', 'GET', undefined, cookie)).json();
+  assert.equal(config.configured, true); assert.equal(config.enabled, true);
+  assert.ok(!JSON.stringify(config).includes(fakeKey));
+  assert.equal((await (await api('/api/model-config/')).json()).configured, false);
+  const bad = await api('/api/interpret/', 'POST', { ...payload, draws: [payload.draws[0], payload.draws[0], payload.draws[2]] }, cookie);
+  assert.equal(bad.status, 400);
+  const first = await events(await api('/api/interpret/', 'POST', payload, cookie));
+  assert.ok(first.some(item => item.event === 'delta'));
+  const complete = first.find(item => item.event === 'done').data;
+  assert.ok(complete.text.includes('模拟流式解读'));
+  assert.ok(!complete.text.includes('不应展示的思考'));
+  assert.equal(complete.model, 'test-model'); assert.equal(complete.usage.prompt_tokens, 30);
+  assert.equal(complete.readerId, 'twilight');
+  assert.equal(new Set(personas.map(p => readerVoices[p.id].prompt)).size, 6);
+  const replay = await events(await api('/api/interpret/', 'POST', payload, cookie));
+  assert.equal(replay[0].event, 'done'); assert.equal(replay[0].data.cached, true);
+  assert.deepEqual(replay[0].data.usage, complete.usage);
+  const pinkie = await events(await api('/api/interpret/', 'POST', { ...payload, readerId: 'pinkie' }, cookie));
+  assert.equal(pinkie.find(item => item.event === 'done').data.readerName, '碧琪');
+  assert.ok(!pinkie.find(item => item.event === 'done').data.cached);
+  const pinkieAgain = await events(await api('/api/interpret/', 'POST', { ...payload, readerId: 'pinkie' }, cookie));
+  assert.equal(pinkieAgain[0].data.cached, true);
+  const unfinished = await events(await api('/api/interpret/', 'POST', { ...payload, question: '[INCOMPLETE]' }, cookie));
+  assert.ok(unfinished.some(item => item.event === 'delta'));
+  assert.ok(unfinished.some(item => item.event === 'error')); assert.ok(!unfinished.some(item => item.event === 'done'));
+  const retry = await events(await api('/api/interpret/', 'POST', { ...payload, question: '[INCOMPLETE]' }, cookie));
+  assert.ok(retry.some(item => item.event === 'delta')); // incomplete output was not cached
+  const abort = new AbortController();
+  const slow = await fetch(base + '/api/interpret/', { method: 'POST', signal: abort.signal, headers: { Origin: base, Cookie: cookie, 'Content-Type': 'application/json' }, body: JSON.stringify({ ...payload, question: '[SLOW]' }) });
+  const slowReader = slow.body.getReader(); await slowReader.read();
+  assert.equal((await api('/api/interpret/', 'POST', { ...payload, question: '并发测试' }, cookie)).status, 409);
+  abort.abort(); await slowReader.cancel().catch(() => {});
+  await new Promise(resolve => setTimeout(resolve, 250));
+  const afterAbort = await events(await api('/api/interpret/', 'POST', { ...payload, question: '停止后重新测试' }, cookie));
+  assert.ok(afterAbort.some(item => item.event === 'done'));
+  const limited = await events(await api('/api/interpret/', 'POST', { ...payload, question: '[RATE]' }, cookie));
+  assert.ok(limited.some(item => item.event === 'error')); assert.ok(!JSON.stringify(limited).includes('upstream body'));
+  const day = new Date(2026, 9, 13, 12);
+  const daily = { kind: 'daily', deckId: 'pony-v1', readerId: 'fluttershy', date: dateKey(day), question: '', draws: [{ id: dailyDraw(day).card.id, reversed: false }] };
+  const today = await events(await api('/api/interpret/', 'POST', daily, cookie));
+  assert.equal(today.find(item => item.event === 'done').data.readerName, '柔柔');
+  assert.equal((await api('/api/interpret/', 'POST', { ...daily, draws: [{ id: 'invalid', reversed: false }] }, cookie)).status, 400);
+  assert.equal((await api('/api/interpret/', 'POST', { ...daily, draws: [{ ...daily.draws[0], reversed: true }] }, cookie)).status, 400);
+  const database = new DatabaseSync(databasePath);
+  const row = database.prepare('SELECT * FROM credentials').get();
+  assert.ok(!JSON.stringify(row).includes(fakeKey));
+  assert.equal(row.owner, createHash('sha256').update(cookie.split('=')[1]).digest('hex'));
+  assert.notEqual(row.cipher, fakeKey);
+  database.close();
+  assert.equal((await api('/api/model-config/', 'DELETE', undefined, cookie)).status, 200);
+  assert.equal((await (await api('/api/model-config/', 'GET', undefined, cookie)).json()).configured, false);
+  console.log('PASS: encrypted credentials, origin/isolation, Chinese SSE, role-specific cache/personas, daily fixed-card AI without question, invalid daily/reversed rejection, cancellation, incomplete streams and deletion. No provider calls or real keys used.');
+} finally {
+  if (server.exitCode === null) { const exit = new Promise(resolve => server.once('exit', resolve)); server.kill(); await exit; }
+  await rm(directory, { recursive: true, force: true });
+}

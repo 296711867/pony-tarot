@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <!-- Hand-drawn 24-unit magic interface icons. Inherit stroke/fill from the host SVG. -->
+  <symbol id="sparkle" viewBox="0 0 24 24">
+    <path d="m12 2 2.1 7.9L22 12l-7.9 2.1L12 22l-2.1-7.9L2 12l7.9-2.1Z"/>
+    <path d="M19 2v4M17 4h4"/>
+  </symbol>
+  <symbol id="sun" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="6"/>
+    <path d="m12 8 1.1 2.9L16 12l-2.9 1.1L12 16l-1.1-2.9L8 12l2.9-1.1ZM12 2v1M12 21v1M2 12h1M21 12h1M5 5l.7.7M18.3 18.3l.7.7M5 19l.7-.7M18.3 5.7 19 5"/>
+  </symbol>
+  <symbol id="cards" viewBox="0 0 24 24">
+    <rect x="8" y="3" width="12" height="18" rx="2"/>
+    <path d="M5.5 5 2.8 18.4a1.5 1.5 0 0 0 1.2 1.8l1.5.3M11 6h1M17 18h1m-4-9 1.1 2.9L18 13l-2.9 1.1L14 17l-1.1-2.9L10 13l2.9-1.1Z"/>
+  </symbol>
+  <symbol id="book" viewBox="0 0 24 24">
+    <path d="M12 7C8 4 4 4 2 5v15c3-1 6-.5 10 1 4-1.5 7-2 10-1V5c-2-1-6-1-10 2ZM12 7v14M5 10l4 1M5 14l4 1M15 11l4-1M15 15l4-1"/>
+    <path d="M12 1v3M10.5 2.5h3"/>
+  </symbol>
+  <symbol id="leaf" viewBox="0 0 24 24">
+    <!-- Magic journal: page and a feather, preserving the existing journal icon key. -->
+    <path d="M12 4H4v18h15v-8M7 17h4M7 19h7M10 14C9 7 15 1 22 2c0 7-5 12-12 12ZM7 17 18 6M13 11l-.5-4M15 9l4 .5"/>
+  </symbol>
+  <symbol id="settings" viewBox="0 0 24 24">
+    <path d="m9 3-1 3-3 1 1 3-2 2 2 2-1 3 3 1 1 3h6l1-3 3-1-1-3 2-2-2-2 1-3-3-1-1-3Z"/>
+    <path d="m12 8 1.1 2.9L16 12l-2.9 1.1L12 16l-1.1-2.9L8 12l2.9-1.1Z"/>
+  </symbol>
+  <symbol id="home" viewBox="0 0 24 24">
+    <path d="m3 11 9-8 9 8M5 10v11h14V10M9 21v-7a3 3 0 0 1 6 0v7M16 6V3h3v6"/>
+  </symbol>
+  <symbol id="heart" viewBox="0 0 24 24">
+    <path d="M12 21 3.8 13C-2 7.1 5.5.6 12 7c6.5-6.4 14 .1 8.2 6ZM12 10v6M9 13h6"/>
+  </symbol>
+  <symbol id="download" viewBox="0 0 24 24">
+    <path d="M12 3v12m-4-4 4 4 4-4M4 16v5h16v-5M4 5h3M5.5 3.5v3"/>
+  </symbol>
+  <symbol id="arrow" viewBox="0 0 24 24">
+    <path d="M3 12h17m-6-6 6 6-6 6M3 9v6"/>
+  </symbol>
+  <symbol id="close" viewBox="0 0 24 24">
+    <path d="m6 6 12 12M6 18 18 6"/>
+  </symbol>
+</svg>

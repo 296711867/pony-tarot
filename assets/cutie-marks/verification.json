@@ -1,0 +1,87 @@
+{
+  "applejack": {
+    "size": [
+      2048,
+      1936
+    ],
+    "alphaBounds": [
+      71,
+      75,
+      1972,
+      1868
+    ],
+    "transparentBackground": true,
+    "pureVector": true
+  },
+  "fluttershy": {
+    "size": [
+      2014,
+      2048
+    ],
+    "alphaBounds": [
+      73,
+      59,
+      1962,
+      2008
+    ],
+    "transparentBackground": true,
+    "pureVector": true
+  },
+  "pinkie": {
+    "size": [
+      1416,
+      2048
+    ],
+    "alphaBounds": [
+      74,
+      74,
+      1339,
+      1972
+    ],
+    "transparentBackground": true,
+    "pureVector": true
+  },
+  "rainbow": {
+    "size": [
+      1012,
+      2048
+    ],
+    "alphaBounds": [
+      75,
+      74,
+      934,
+      1974
+    ],
+    "transparentBackground": true,
+    "pureVector": true
+  },
+  "rarity": {
+    "size": [
+      1044,
+      2048
+    ],
+    "alphaBounds": [
+      75,
+      75,
+      966,
+      1970
+    ],
+    "transparentBackground": true,
+    "pureVector": true
+  },
+  "twilight": {
+    "size": [
+      1634,
+      2048
+    ],
+    "alphaBounds": [
+      75,
+      76,
+      1556,
+      1970
+    ],
+    "transparentBackground": true,
+    "pureVector": true,
+    "opaqueWhitePixels": 138874
+  }
+}

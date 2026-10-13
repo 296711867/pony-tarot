@@ -1,0 +1,32 @@
+{
+  "name": "pony-tarot",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --hostname 127.0.0.1 --port 3000",
+    "build": "node scripts/sync-icons.mjs && node --experimental-strip-types scripts/sync-cards.ts && node scripts/sync-decks.mjs && next build",
+    "check": "node scripts/sync-icons.mjs && node scripts/sync-decks.mjs && tsc --noEmit && node --experimental-strip-types scripts/check.ts",
+    "preview": "next start --hostname 127.0.0.1 --port 3000",
+    "ai:setup": "node scripts/setup-ai.mjs",
+    "check:ai": "node --experimental-strip-types scripts/check-ai.mjs",
+    "cards:sync": "node --experimental-strip-types scripts/sync-cards.ts",
+    "cards:prepare": "node --experimental-strip-types scripts/prepare-cards.mjs && npm run cards:sync",
+    "decks:sync": "node scripts/sync-decks.mjs",
+    "icons:sync": "node scripts/sync-icons.mjs",
+    "deploy:prepare": "node scripts/prepare-deploy.mjs",
+    "deploy:package": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/package-deploy.ps1",
+    "art:prepare": "node scripts/prepare-art.mjs"
+  },
+  "dependencies": {
+    "next": "16.4.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "typescript": "5.9.3"
+  },
+  "type": "module"
+}

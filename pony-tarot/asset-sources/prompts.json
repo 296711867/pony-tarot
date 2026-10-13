@@ -1,0 +1,21 @@
+{
+  "tool": "built-in image_gen",
+  "reference": "../../整体参考风格.png",
+  "assets": [
+    {
+      "key": "village-wide",
+      "transparent": false,
+      "prompt": "Use case: stylized-concept. Asset type: finished widescreen illustrated background for a Ponyville tarot homepage, landscape aspect ratio 16:9, high detail 2400 pixels wide or more. Input image: STYLE REFERENCE ONLY, not an edit target. Match the reference's luminous pastel peach, buttercream gold, muted rosy pink, pale lavender, faceted crystal storybook painting, soft paper grain and delicate warm linework. Create a panoramic idyllic My Little Pony inspired Ponyville village game home screen. Fixed gently elevated camera. Four clearly separate large landmark buildings joined by little winding cream paths around a spacious central meadow: upper left a grand hollow oak tree library with windows and lavender foliage; upper right Twilight Sparkle's lavender crystal castle with elegant pointed towers; lower left a pink gingerbread cupcake bakery with candy striped details; lower right a cozy apple farm barn with apple trees and warm peach roof. Precisely keep centers around library x23% y38%, castle x74% y33%, bakery x24% y68%, barn x76% y68%. Buildings large enough to recognize, elegantly composed, believable shared perspective. Sky occupies upper 22%, luminous mountains and crystal peaks far behind. Clear open center around x50% y58% for a separately overlaid pony. Rich flower foreground, pastel trees, subtle distant balloons, warm sunshine. Full bleed illustration, no ornamental outer border. No ponies or people, no text, no labels, no tarot cards, no logos, no UI elements, no watermark. Real painterly cohesive art, not icons or generic vector placeholders."
+    },
+    {
+      "key": "village-tall",
+      "transparent": false,
+      "prompt": "Use case: stylized-concept. Asset type: finished portrait illustrated village background for mobile game-like website, portrait 2:3 aspect ratio. Input image STYLE REFERENCE ONLY. Match its luminous buttery cream, peach pink, muted magenta, lavender, faceted storybook crystal illustration with paper grain and warm linework. Create a mobile portrait My Little Pony inspired Ponyville home village. Four distinct buildings arranged around winding paths in an airy garden meadow: large hollow oak tree library centered x25% y35%; lavender crystal castle centered x75% y34%; pink cupcake gingerbread bakery centered x25% y64%; cozy apple farm barn and orchard centered x77% y63%. All four must be completely visible and individually recognizable. Gentle elevated view, lush flowers below, crystal hills behind, soft luminous sky in upper 20 percent. Leave open meadow near center x50% y50% to place a separate pony; bottom 20% mostly flowers and grass for a UI overlay. Full bleed, coherent fairytale illustration, beautiful handcrafted atmosphere matching the reference. No ponies, people, text, letters, logos, labels, watermark, card frames or UI. This is a background asset, not a screenshot."
+    },
+    {
+      "key": "twilight-guide",
+      "transparent": true,
+      "prompt": "Use case: illustration-story. Asset type: transparent PNG website companion character, full body visible. Input image is STYLE REFERENCE ONLY. Draw Twilight Sparkle from My Little Pony as a friendly lavender pony with small unicorn horn and folded wings, indigo mane and tail with a pink and purple stripe, violet eyes, subtle star cutie mark. Facing slightly toward viewer's left, gentle welcoming smile, one front hoof raised casually. Match reference's soft rosy pastel storybook brushwork, faceted pastel highlights, fine warm outlines and subtle paper texture, richly rendered but flat 2D illustration. Full silhouette clean and unclipped, generous empty transparent margin around horn, tail and hooves. Isolated on genuinely transparent background; no white rectangle, no scenery, no ground, no text, no cards, no props, no decorative border. Consistent warm peach illumination from upper left."
+    }
+  ]
+}

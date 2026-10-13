@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-7.4 26.8 578.3 788.9">
+  <!-- 碧琪可爱标志：三只气球（上黄、左蓝、右蓝）与卷曲细绳，透明背景 -->
+
+  <!-- 上：黄气球，蓝色细绳 -->
+  <g>
+    <path fill="none" stroke="#7AD2F8" stroke-width="8.5" stroke-linecap="round"
+          d="M 270 316 C 256 380 304 420 290 480 C 280 524 238 544 230 576 C 224 604 250 618 263 600 C 274 584 260 564 242 574"/>
+    <path fill="#F8F3A9" d="M 240 276 L 270 330 L 300 276 Z"/>
+    <ellipse fill="#F8F3A9" cx="270" cy="178" rx="88" ry="122"/>
+  </g>
+
+  <!-- 左下：蓝气球，黄色细绳 -->
+  <g>
+    <path fill="none" stroke="#F8F3A9" stroke-width="8.5" stroke-linecap="round"
+          d="M 102 550 C 94 622 150 648 184 684 C 216 718 226 756 200 776 C 180 790 156 780 160 758 C 163 740 184 738 192 754"/>
+    <path fill="#7AD2F8" d="M 72 508 L 102 564 L 132 508 Z"/>
+    <ellipse fill="#7AD2F8" cx="102" cy="432" rx="88" ry="122"/>
+  </g>
+
+  <!-- 右中：蓝气球，黄色细绳 -->
+  <g>
+    <path fill="none" stroke="#F8F3A9" stroke-width="8.5" stroke-linecap="round"
+          d="M 462 518 C 448 602 380 618 350 680 C 326 730 350 776 388 768 C 418 762 416 726 390 726 C 370 726 364 750 382 758"/>
+    <path fill="#7AD2F8" d="M 432 494 L 462 550 L 492 494 Z"/>
+    <ellipse fill="#7AD2F8" cx="462" cy="400" rx="88" ry="122"/>
+  </g>
+</svg>
