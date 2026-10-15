@@ -2,7 +2,7 @@ import type { Reading, Settings } from '../data/types';
 import { getDeck, defaultDeck } from '../data/decks.ts';
 const HISTORY = 'pony-tarot-history-v1';
 const PREFERENCES = 'pony-tarot-settings-v1';
-export const defaults: Settings = { motion: true, reversed: false, theme: 'dark', deckId: defaultDeck.id };
+export const defaults: Settings = { motion: true, reversed: true, theme: 'dark', deckId: defaultDeck.id };
 
 export function readHistory(): Reading[] {
   try {
@@ -17,7 +17,7 @@ export function writeHistory(items: Reading[]): void {
 export function readSettings(): Settings {
   try {
     const value = JSON.parse(localStorage.getItem(PREFERENCES) ?? '{}');
-    return { motion: typeof value?.motion === 'boolean' ? value.motion : true, reversed: typeof value?.reversed === 'boolean' ? value.reversed : false, theme: value?.theme === 'light' ? 'light' : 'dark', deckId: getDeck(value?.deckId).id };
+    return { motion: typeof value?.motion === 'boolean' ? value.motion : true, reversed: typeof value?.reversed === 'boolean' ? value.reversed : true, theme: value?.theme === 'light' ? 'light' : 'dark', deckId: getDeck(value?.deckId).id };
   } catch { return defaults; }
 }
 export function writeSettings(value: Settings): void { localStorage.setItem(PREFERENCES, JSON.stringify(value)); }

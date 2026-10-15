@@ -57,10 +57,22 @@ export function MagicEffects({ enabled }: { enabled: boolean }) {
       if (!frame) frame = requestAnimationFrame(draw);
     };
     const editable = (target: EventTarget | null) => target instanceof Element && !!target.closest('input,textarea,select,[contenteditable="true"]');
-    const down = (event: PointerEvent) => { if (!editable(event.target) && event.isPrimary) add(event.clientX, event.clientY, event.pointerType === 'touch' ? 6 : 12, true); };
+    // Inside a dialog with transform animations the fixed canvas is relative to the
+    // dialog box, not the viewport; map pointer coords through its live rect.
+    const toCanvas = (clientX: number, clientY: number) => {
+      const rect = surface.getBoundingClientRect();
+      const scaleX = rect.width ? width / rect.width : 1;
+      const scaleY = rect.height ? height / rect.height : 1;
+      return { x: (clientX - rect.left) * scaleX, y: (clientY - rect.top) * scaleY };
+    };
+    const down = (event: PointerEvent) => {
+      if (!editable(event.target) && event.isPrimary) { const p = toCanvas(event.clientX, event.clientY); add(p.x, p.y, event.pointerType === 'touch' ? 6 : 12, true); }
+    };
     const move = (event: PointerEvent) => {
       if (event.pointerType !== 'mouse' || editable(event.target) || performance.now() - lastMove < 28) return;
-      lastMove = performance.now(); add(event.clientX, event.clientY, event.buttons & 1 ? 4 : 1, false);
+      lastMove = performance.now();
+      const p = toCanvas(event.clientX, event.clientY);
+      add(p.x, p.y, event.buttons & 1 ? 4 : 1, false);
     };
     const clear = () => { sparks = []; cancelAnimationFrame(frame); frame = 0; context.clearRect(0, 0, width, height); };
     resize();
