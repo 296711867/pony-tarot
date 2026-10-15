@@ -29,6 +29,6 @@ for (const filename of (await readdir(directory)).filter(name => name.endsWith('
 }
 assert(decks.length, 'At least one deck is required');
 // Keep the established default independent of filename order.
-decks.sort((a, b) => Number(b.id === 'pony-v1') - Number(a.id === 'pony-v1'));
+decks.sort((a, b) => Number(b.id === 'pony-v2') - Number(a.id === 'pony-v2'));
 await writeFile(new URL('../data/decks.generated.json', import.meta.url), JSON.stringify(decks, null, 2) + '\n');
 console.log(`Decks ready: ${decks.map(deck => `${deck.name} (${deck.cards.length})`).join(', ')}`);

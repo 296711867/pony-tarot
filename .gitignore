@@ -20,5 +20,9 @@ tarot-main/
 TarotWhisper-main/
 tarot-next-app-main/
 
-# ===== 卡面原图（78张PNG，网页使用 pony-tarot/public/cards 下的 WebP，已压缩）=====
+# ===== 卡面原图（各78张PNG，网页使用 pony-tarot/public 下已压缩的 WebP）=====
 卡牌版本1/
+卡牌版本2/
+
+# ===== ZCode 会话工作区 =====
+.zcode/

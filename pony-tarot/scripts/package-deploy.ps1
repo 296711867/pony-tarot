@@ -21,10 +21,11 @@ foreach ($forbidden in @('.env', '.env.local', '.runtime')) {
 $release = @{
     builtAt = [DateTimeOffset]::Now.ToString('o')
     buildId = (Get-Content -LiteralPath (Join-Path $appRoot '.next\BUILD_ID') -Raw).Trim()
-    features = @('pony-svg-marks', 'smooth-apple-butterfly', 'magic-ui-icons', 'visible-ai-entry', 'inline-ai-settings', 'http-reading-id')
+    features = @('pony-svg-marks', 'smooth-apple-butterfly', 'magic-ui-icons', 'visible-ai-entry', 'inline-ai-settings', 'http-reading-id', 'deck-pony-v2')
 }
 [IO.File]::WriteAllText((Join-Path $packageRoot 'release.json'), ($release | ConvertTo-Json), [Text.UTF8Encoding]::new($false))
 $archive = Join-Path $projectRoot ('pony-tarot-deploy-' + (Get-Date -Format 'yyyyMMdd') + '.zip')
-& tar.exe -a -cf $archive -C $packageParent 'pony-tarot'
+# Pin Windows bsdtar: a GNU tar earlier in PATH misreads "C:\..." as a remote host.
+& "$env:SystemRoot\System32\tar.exe" -a -cf $archive -C $packageParent 'pony-tarot'
 if ($LASTEXITCODE -ne 0) { throw 'bsdtar packaging failed' }
 Get-Item -LiteralPath $archive | Select-Object FullName,Length

@@ -20,7 +20,7 @@ let serverLog = '';
 server.stdout.on('data', value => { serverLog += value; });
 server.stderr.on('data', value => { serverLog += value; });
 const api = (path, method = 'GET', body, cookie = '') => fetch(base + path, { method, headers: { Origin: base, 'Content-Type': 'application/json', ...(cookie ? { Cookie: cookie } : {}) }, ...(body ? { body: JSON.stringify(body) } : {}) });
-const payload = { deckId: 'pony-v1', readerId: 'twilight', question: '我可以怎样开始一个新的计划？', draws: [{ id: 'major-00', reversed: false }, { id: 'major-01', reversed: true }, { id: 'major-02', reversed: false }] };
+const payload = { deckId: 'pony-v2', readerId: 'twilight', question: '我可以怎样开始一个新的计划？', draws: [{ id: 'major-00', reversed: false }, { id: 'major-01', reversed: true }, { id: 'major-02', reversed: false }] };
 const events = async response => { const result = []; for await (const event of readSSE(response.body)) result.push({ event: event.event, data: JSON.parse(event.data) }); return result; };
 try {
   const priorOrigin = process.env.APP_ORIGIN;
@@ -88,7 +88,7 @@ try {
   const limited = await events(await api('/api/interpret/', 'POST', { ...payload, question: '[RATE]' }, cookie));
   assert.ok(limited.some(item => item.event === 'error')); assert.ok(!JSON.stringify(limited).includes('upstream body'));
   const day = new Date(2026, 9, 13, 12);
-  const daily = { kind: 'daily', deckId: 'pony-v1', readerId: 'fluttershy', date: dateKey(day), question: '', draws: [{ id: dailyDraw(day).card.id, reversed: false }] };
+  const daily = { kind: 'daily', deckId: 'pony-v2', readerId: 'fluttershy', date: dateKey(day), question: '', draws: [{ id: dailyDraw(day).card.id, reversed: false }] };
   const today = await events(await api('/api/interpret/', 'POST', daily, cookie));
   assert.equal(today.find(item => item.event === 'done').data.readerName, '柔柔');
   assert.equal((await api('/api/interpret/', 'POST', { ...daily, draws: [{ id: 'invalid', reversed: false }] }, cookie)).status, 400);

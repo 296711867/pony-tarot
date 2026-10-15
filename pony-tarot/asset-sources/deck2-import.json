@@ -1,0 +1,626 @@
+[
+  {
+    "id": "cups-00",
+    "source": "杯\\00 圣杯王牌  ACE OF CUPS（碧琪）.png",
+    "originalBytes": 2460539,
+    "webpBytes": 202162,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "cups-01",
+    "source": "杯\\01 圣杯二  TWO OF CUPS（柔柔）.png",
+    "originalBytes": 2557700,
+    "webpBytes": 219224,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "cups-02",
+    "source": "杯\\02 圣杯三  THREE OF CUPS（柔柔）.png",
+    "originalBytes": 2609383,
+    "webpBytes": 218780,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "cups-03",
+    "source": "杯\\03 圣杯四  FOUR OF CUPS（柔柔）.png",
+    "originalBytes": 2755551,
+    "webpBytes": 213014,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "cups-04",
+    "source": "杯\\04 圣杯五 FIVE OF CUPS（柔柔）.png",
+    "originalBytes": 2722520,
+    "webpBytes": 215960,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "cups-05",
+    "source": "杯\\05 圣杯六SIX OF CUPS（柔柔）.png",
+    "originalBytes": 2598510,
+    "webpBytes": 208974,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "cups-06",
+    "source": "杯\\06 圣杯七SEVEN OF CUPS（柔柔.png",
+    "originalBytes": 2302735,
+    "webpBytes": 162376,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "cups-07",
+    "source": "杯\\07 圣杯八EIGHT OF CUPS（柔柔）.png",
+    "originalBytes": 2452369,
+    "webpBytes": 175506,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "cups-08",
+    "source": "杯\\08圣杯九NINE OF CUPS（柔柔）.png",
+    "originalBytes": 2459840,
+    "webpBytes": 192872,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "cups-09",
+    "source": "杯\\09 圣杯十  TEN OF CUPS（柔柔）.png",
+    "originalBytes": 2544609,
+    "webpBytes": 206170,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "cups-10",
+    "source": "杯\\10圣杯侍从PAGE OF CUPS（柔柔）.png",
+    "originalBytes": 2431457,
+    "webpBytes": 193002,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "cups-11",
+    "source": "杯\\11 圣杯骑士 KNIGHT OF CUPS（柔柔）.png",
+    "originalBytes": 2379875,
+    "webpBytes": 182338,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "cups-12",
+    "source": "杯\\12 圣杯皇后 QUEEN OF CUPS（柔柔）.png",
+    "originalBytes": 2652798,
+    "webpBytes": 216384,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "cups-13",
+    "source": "杯\\13 圣杯国王 KING OF CUPS（柔柔）.png",
+    "originalBytes": 2478744,
+    "webpBytes": 189204,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "major-00",
+    "source": "2张\\00 愚者  THE FOOL.png",
+    "originalBytes": 2470324,
+    "webpBytes": 178574,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "major-01",
+    "source": "2张\\01 魔术师  THE MAGICIAN.png",
+    "originalBytes": 2325488,
+    "webpBytes": 189378,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "major-02",
+    "source": "2张\\02 女祭司  THE HIGH PRIESTESS.png",
+    "originalBytes": 2283282,
+    "webpBytes": 160352,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "major-03",
+    "source": "2张\\03 皇后  THE EMPRESS.png",
+    "originalBytes": 2336409,
+    "webpBytes": 170640,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "major-04",
+    "source": "2张\\04 皇帝  THE EMPEROR.png",
+    "originalBytes": 2223920,
+    "webpBytes": 151440,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "major-05",
+    "source": "2张\\05 教皇  THE HIEROPHANT.png",
+    "originalBytes": 2112189,
+    "webpBytes": 146806,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "major-06",
+    "source": "2张\\06 恋人  THE LOVERS.png",
+    "originalBytes": 2100919,
+    "webpBytes": 139670,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "major-07",
+    "source": "2张\\07 战车  THE CHARIOT.png",
+    "originalBytes": 2249903,
+    "webpBytes": 140526,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "major-08",
+    "source": "2张\\08 力量  STRENGTH.png",
+    "originalBytes": 2329155,
+    "webpBytes": 149898,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "major-09",
+    "source": "2张\\09 隐者  THE HERMIT.png",
+    "originalBytes": 2452417,
+    "webpBytes": 165780,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "major-10",
+    "source": "2张\\10 命运之轮  WHEEL OF FORTUNE.png",
+    "originalBytes": 2622642,
+    "webpBytes": 224466,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "major-11",
+    "source": "2张\\11 正义  JUSTICE.png",
+    "originalBytes": 2222367,
+    "webpBytes": 164418,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "major-12",
+    "source": "2张\\12 倒吊人  THE HANGED MAN.png",
+    "originalBytes": 2537020,
+    "webpBytes": 195634,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "major-13",
+    "source": "2张\\13 死神  DEATH.png",
+    "originalBytes": 2635174,
+    "webpBytes": 204664,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "major-14",
+    "source": "2张\\14 节制  TEMPERANCE.png",
+    "originalBytes": 2532749,
+    "webpBytes": 205916,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "major-15",
+    "source": "2张\\15 恶魔  THE DEVIL.png",
+    "originalBytes": 2319823,
+    "webpBytes": 164686,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "major-16",
+    "source": "2张\\16 高塔  THE TOWER.png",
+    "originalBytes": 2485200,
+    "webpBytes": 183538,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "major-17",
+    "source": "2张\\17 星星  THE STAR.png",
+    "originalBytes": 2460529,
+    "webpBytes": 178446,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "major-18",
+    "source": "2张\\18 月亮  THE MOON.png",
+    "originalBytes": 2387467,
+    "webpBytes": 162516,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "major-19",
+    "source": "2张\\19 太阳  THE SUN.png",
+    "originalBytes": 2262756,
+    "webpBytes": 166994,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "major-20",
+    "source": "2张\\20 审判  JUDGEMENT.png",
+    "originalBytes": 2312414,
+    "webpBytes": 171762,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "major-21",
+    "source": "2张\\21 世界  THE WORLD.png",
+    "originalBytes": 2652070,
+    "webpBytes": 221384,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "pentacles-00",
+    "source": "币\\00 星币王牌  ACE OF PENTACLES（碧琪）.png",
+    "originalBytes": 2277885,
+    "webpBytes": 168696,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "pentacles-01",
+    "source": "币\\01 星币二  TWO OF PENTACLES(苹果嘉儿).png",
+    "originalBytes": 2673744,
+    "webpBytes": 237062,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "pentacles-02",
+    "source": "币\\02 星币三  THREE OF PENTACLES(苹果嘉儿).png",
+    "originalBytes": 2561847,
+    "webpBytes": 214872,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "pentacles-03",
+    "source": "币\\03 星币四  FOUR OF PENTACLES(苹果嘉儿).png",
+    "originalBytes": 2382374,
+    "webpBytes": 183478,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "pentacles-04",
+    "source": "币\\04 星币五  FIVE OF PENTACLES(苹果嘉儿).png",
+    "originalBytes": 2731494,
+    "webpBytes": 233042,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "pentacles-05",
+    "source": "币\\05 星币六 SIX OF PENTACLES(苹果嘉儿).png",
+    "originalBytes": 2563953,
+    "webpBytes": 218188,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "pentacles-06",
+    "source": "币\\06 星币七  SEVEN OF PENTACLES(苹果嘉儿).png",
+    "originalBytes": 2523438,
+    "webpBytes": 214122,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "pentacles-07",
+    "source": "币\\07 星币八 EIGHT OF PENTACLES（苹果嘉儿).png",
+    "originalBytes": 2534221,
+    "webpBytes": 208588,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "pentacles-08",
+    "source": "币\\08 星币九 NINE OF PENTACLES(苹果嘉儿).png",
+    "originalBytes": 2733512,
+    "webpBytes": 243672,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "pentacles-09",
+    "source": "币\\09 星币十  TEN OF PENTACLES(苹果嘉儿).png",
+    "originalBytes": 2605813,
+    "webpBytes": 230542,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "pentacles-10",
+    "source": "币\\10 星币侍从 PAGE OF PENTACLES(苹果嘉儿).png",
+    "originalBytes": 2569020,
+    "webpBytes": 219156,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "pentacles-11",
+    "source": "币\\11 星币骑士 KNIGHT OF PENTACLES（苹果嘉儿).png",
+    "originalBytes": 2578698,
+    "webpBytes": 224602,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "pentacles-12",
+    "source": "币\\12 星币皇后 QUEEN OF PENTACLES(苹果嘉儿).png",
+    "originalBytes": 2606966,
+    "webpBytes": 224032,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "pentacles-13",
+    "source": "币\\13 星币国王  KING OF PENTACLES(苹果嘉儿).png",
+    "originalBytes": 2531896,
+    "webpBytes": 204982,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "swords-00",
+    "source": "剑\\00 宝剑王牌  ACE OF SWORDS（碧琪）.png",
+    "originalBytes": 2348791,
+    "webpBytes": 180430,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "swords-01",
+    "source": "剑\\01 宝剑二  TWO OF SWORDS（珍奇）.png",
+    "originalBytes": 2490495,
+    "webpBytes": 177814,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "swords-02",
+    "source": "剑\\02 宝剑三  THREE OF SWORDS（珍奇）.png",
+    "originalBytes": 2612489,
+    "webpBytes": 181356,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "swords-03",
+    "source": "剑\\03 宝剑四  FOUR OF SWORDS（珍奇）.png",
+    "originalBytes": 2340430,
+    "webpBytes": 168518,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "swords-04",
+    "source": "剑\\04 宝剑五  FIVE OF SWORDS（珍奇）.png",
+    "originalBytes": 2585650,
+    "webpBytes": 200090,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "swords-05",
+    "source": "剑\\05 宝剑六 SIX OF SWORDS(珍奇).png",
+    "originalBytes": 2656047,
+    "webpBytes": 217024,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "swords-06",
+    "source": "剑\\06 宝剑七 SEVEN OF SWORDS(珍奇).png",
+    "originalBytes": 2465823,
+    "webpBytes": 187024,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "swords-07",
+    "source": "剑\\07 宝剑八  EIGHT OF SWORDS(珍奇）.png",
+    "originalBytes": 2625079,
+    "webpBytes": 215234,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "swords-08",
+    "source": "剑\\08 宝剑九 NINE OF SWORDS(珍奇).png",
+    "originalBytes": 2607207,
+    "webpBytes": 189474,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "swords-09",
+    "source": "剑\\09 宝剑十  TEN OF SWORDS(珍奇).png",
+    "originalBytes": 2765754,
+    "webpBytes": 219808,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "swords-10",
+    "source": "剑\\10 宝剑侍从 PAGE OF SWORDS(珍奇）.png",
+    "originalBytes": 2334030,
+    "webpBytes": 169374,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "swords-11",
+    "source": "剑\\11 宝剑骑士 KNIGHT OF SWORDS(珍奇).png",
+    "originalBytes": 2473375,
+    "webpBytes": 168752,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "swords-12",
+    "source": "剑\\12 宝剑皇后 QUEEN OF SWORDS(珍奇).png",
+    "originalBytes": 2568434,
+    "webpBytes": 195288,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "swords-13",
+    "source": "剑\\13 宝剑国王 KING OF SWORDS(珍奇).png",
+    "originalBytes": 2517284,
+    "webpBytes": 208558,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "wands-00",
+    "source": "杖\\00 权杖王牌  ACE OF WANDS（碧琪）.png",
+    "originalBytes": 2307166,
+    "webpBytes": 169926,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "wands-01",
+    "source": "杖\\01 权杖二  TWO OF WANDS（云宝）.png",
+    "originalBytes": 2312393,
+    "webpBytes": 181594,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "wands-02",
+    "source": "杖\\02 权杖三  THREE OF WANDS（云宝）.png",
+    "originalBytes": 2612895,
+    "webpBytes": 230014,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "wands-03",
+    "source": "杖\\03 权杖四  FOUR OF WANDS（云宝）.png",
+    "originalBytes": 2590617,
+    "webpBytes": 233288,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "wands-04",
+    "source": "杖\\04 权杖五  FIVE OF WANDS（云宝）.png",
+    "originalBytes": 2349597,
+    "webpBytes": 197408,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "wands-05",
+    "source": "杖\\05 权杖六  SIX OF WANDS（云宝）.png",
+    "originalBytes": 2444920,
+    "webpBytes": 210004,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "wands-06",
+    "source": "杖\\06 权杖七  SEVEN OF WANDS（云宝）.png",
+    "originalBytes": 2617686,
+    "webpBytes": 226984,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "wands-07",
+    "source": "杖\\07 权杖八  EIGHT OF WANDS（云宝）.png",
+    "originalBytes": 2473494,
+    "webpBytes": 194994,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "wands-08",
+    "source": "杖\\08 权杖九  NINE OF WANDS（云宝）.png",
+    "originalBytes": 2591967,
+    "webpBytes": 199206,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "wands-09",
+    "source": "杖\\09 权杖十  TEN OF WANDS（云宝）.png",
+    "originalBytes": 2422199,
+    "webpBytes": 187622,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "wands-10",
+    "source": "杖\\10 权杖侍从  PAGE OF WANDS（云宝）.png",
+    "originalBytes": 2178691,
+    "webpBytes": 164522,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "wands-11",
+    "source": "杖\\11 权杖骑士  KNIGHT OF WANDS（云宝）.png",
+    "originalBytes": 2538669,
+    "webpBytes": 194728,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "wands-12",
+    "source": "杖\\12 权杖皇后  QUEEN OF WANDS（云宝）.png",
+    "originalBytes": 2457855,
+    "webpBytes": 193890,
+    "width": 768,
+    "height": 1152
+  },
+  {
+    "id": "wands-13",
+    "source": "杖\\13 权杖国王  KING OF WANDS（云宝）.png",
+    "originalBytes": 2444809,
+    "webpBytes": 194568,
+    "width": 768,
+    "height": 1152
+  }
+]

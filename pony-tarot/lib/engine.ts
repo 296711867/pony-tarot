@@ -21,7 +21,7 @@ export function dateKey(date = new Date()): string {
 
 export function dailyDraw(date = new Date(), deck: Deck = defaultDeck): Draw {
   let hash = 5381;
-  for (const c of `${deck.id === 'pony-v1' ? 'pony-daily-v1' : deck.id}:${dateKey(date)}`) hash = ((hash << 5) + hash) ^ c.charCodeAt(0);
+  for (const c of `${deck.id}:${dateKey(date)}`) hash = ((hash << 5) + hash) ^ c.charCodeAt(0);
   return { card: deck.cards[(hash >>> 0) % deck.cards.length], reversed: false };
 }
 
